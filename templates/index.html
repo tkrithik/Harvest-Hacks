@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Harvest Hacks</title>
+	<link rel="stylesheet" href="/static/css/style.css">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="title">
+		Harvest Hacks:<br>
+		Image to Information!
+	</div>
+	<div class="file_upload_list">
+		<ul>
+			<li>
+				<div class="file_item">
+					<div class="format">
+						<p>Fruits</p>
+					</div>
+					<div class="file_progress">
+						<div class="file_info">
+							<div class="file_name" style="font-size: 24px">
+								 Your  fruit  file:
+							</div>
+							<div class="file_size_wrap">
+								<div class="file_size"></div>
+								<div class="file_close">X</div>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="inner_progress" style="width: 100%;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="choose_file" id="upload_div">
+    <form id="fileinfo" enctype="multipart/form-data" method="post" name="fileinfo">
+		<label for="choose_file">
+			<input type="file" id="choose_file">
+			<span>Choose Files</span>
+		</label>
+    </form>
+    <input class="input_button" id="upload_button1" type="button" value="Upload" onclick="uploadFile(this)"></input>
+	</div>
+	<div id="transcript_text">
+		<p></p>
+	</div>
+</div>
+<script src="../static/upload.js"></script>
+<script src="../static/process.js"></script>
+</body>
+</html>

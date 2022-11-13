@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Harvest Hacks</title>
+	<link rel="stylesheet" href="/static/css/fruit_style.css">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="title">
+        {{ title }}
+	</div>
+
+    <div class="text">
+        {{ content }}
+	</div>
+	<div>
+		<img src={{ image }} alt="{{ title }}" class="center" style="width:20%;height:20%;">
+	</div>
+</div>
+<script src="../static/upload.js"></script>
+<script src="../static/process.js"></script>
+</body>
+</html>
